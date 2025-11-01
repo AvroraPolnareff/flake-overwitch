@@ -21,7 +21,7 @@
           nativeBuildInputs = with pkgs; [
             pkg-config
             autoreconfHook
-            wrapGAppsHook
+            wrapGAppsHook3
           ];
 
           buildInputs = with pkgs; [
