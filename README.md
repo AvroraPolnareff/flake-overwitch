@@ -29,6 +29,10 @@ add the nixos module to your modules:
 ```
 And then enable it in (for example) `configuration.nix`
 ```   
-services.overwitch.enable = true; 
+services.overwitch = {
+  enable = true;
+  dbus = true;
+  udev = true;
+}; 
 ```
 
