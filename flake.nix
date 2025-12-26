@@ -68,8 +68,8 @@
         };
       in
       {
-        packages.x86_64-linux = {
-          default = self.packages.x86_64-linux.overwitch;
+        packages = {
+          default = overwitch;
           overwitch = overwitch; # also exposed as `default`
         };
 
