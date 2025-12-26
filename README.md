@@ -22,5 +22,9 @@ Include the flake in your `flake.nix`
 
 And then enable it in `configuration.nix`
 ```   
-services.overwitch.enable = true; 
+services.overwitch = {
+   enable = true;
+   udev = true;
+   dbus = true;
+}; 
 ```
